@@ -1,0 +1,5 @@
+print ("Nama saya alma")
+print ("saya asal Indonesia,tangsel")
+print ("profesi saya sebagai pelajar di smk yadika")
+print ("saya berasal dari negara indonesia")
+print ("saya suka melukis")

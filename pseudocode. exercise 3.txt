@@ -1,0 +1,8 @@
+Title: determine student pass/fail
+start
+input score (s)
+if S > 75 then
+output "pass"
+if S < 75 then 
+output "fail"
+end

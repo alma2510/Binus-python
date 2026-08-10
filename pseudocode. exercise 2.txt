@@ -1,0 +1,7 @@
+Title: calculate the area
+start
+input radius
+area = 3.14 
+radius x radius
+output area
+end
