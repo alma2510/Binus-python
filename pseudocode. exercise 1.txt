@@ -1,0 +1,7 @@
+Title: hitung luas lapangan
+start
+input lenght
+input widht
+area = lenght x widht
+output "area =
+end
