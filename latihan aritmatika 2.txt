@@ -1,0 +1,9 @@
+#menghitung volume bola
+#input jari-jari
+r = float(input("masukan jari-jari bola (cm): "))
+
+#proses menghitung bola 
+volume = (4/3) * 3.14 * r ** 3
+
+#output hasil
+print(f"volume bola = {volume:.2f} cm^3")

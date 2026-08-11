@@ -1,0 +1,11 @@
+# program menghitung balok 
+
+panjang =  float(input("masukan panjang balok (cm): "))
+lebar = float(input("masukan lebar balok (cm): "))
+tinggi = float(input("masukan tinggi balok (cm): "))
+
+#menghitung volume balok 
+volume = panjang*lebar*tinggi 
+
+#output hasil
+print(f"volume balok = {volume} cm^3") 
