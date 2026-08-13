@@ -1,1 +1,7 @@
-me
+#exercise 1
+num = int(input("masukan angka : "))
+
+if num %2 == 0:
+    print(f"{num} angka genap")
+else:
+    print(f"{num} angka ganjil") 
