@@ -1,0 +1,52 @@
+def print_introduction():
+    print("------------------------")
+    print("|   Alma Kireina Exa   |")
+    print("|      Indonesia       |")
+    print("------------------------")
+
+
+# rumus
+def addition(value1=5, value2=5):
+    return value1 + value2
+
+def subtraction(value1=5, value2=5):
+    return value1 - value2
+
+def multiplication(value1=5, value2=5):
+    return value1 * value2
+
+def division(value1=5, value2=5):
+    return value1 / value2
+
+def modulus(value1=5, value2=5):
+    return value1 % value2
+
+# eksekusi
+
+while True:
+    menu = input("\nEnter Menu (+|-|/|*|%|stop): ")
+
+    if menu == "stop":
+        print("Program stopped. Thank you for using my program.")
+        break
+
+    value1 = int(input("Enter Value 1: "))
+    value2 = int(input("Enter Value 2: "))
+
+    if menu == "+":
+        print("The result of addition", value1, "+", value2, "is", addition(value1, value2))
+
+    elif menu == "-":
+        print("The result of subtraction", value1, "-", value2, "is", subtraction(value1, value2))
+
+    elif menu == "*":
+        print("The result of multiplication", value1, "*", value2, "is", multiplication(value1, value2))
+
+    elif menu == "/":
+        print("The result of division", value1, "/", value2, "is", division(value1, value2))
+
+    elif menu == "%":
+        print("The result of modulus", value1, "%", value2, "is", modulus(value1, value2))
+
+    else:
+        print("menu tak tersedia")
