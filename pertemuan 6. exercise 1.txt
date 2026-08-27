@@ -1,0 +1,19 @@
+class Student:
+    def _init_(self, name, age, class_name):
+        self.name = name
+        self.age = age
+        self.class_name = class_name
+
+    def display_Student(self):
+        print("\n===== BIODATA SISWA =====")
+        print("Nama  :", self.name)
+        print("Umur  :", self.age)
+        print("Kelas :", self.class_name)
+
+
+name = input("Masukkan Nama: ")
+age = input("Masukkan Umur: ")
+class_name = input("Masukkan Kelas: ")
+
+student1 = Student(name, age, class_name)
+student1.display_Student()
