@@ -1,0 +1,30 @@
+import math
+
+class shape:
+    def area(self):
+        return 0
+
+class rectangle(shape):
+    def __init__(self, panjang, lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def area(self):
+        return self.panjang * self.lebar
+
+
+class circel(shape):
+    def __init__(self, jari_jari):
+        self.jari_jari = jari_jari ** 2
+
+    def area(self):
+        return math.pi * self.jari_jari ** 2
+
+
+daftar_bentuk = [
+    rectangle(10, 5),
+    circel(7)
+]
+
+for bentuk in daftar_bentuk:
+    print("luas bentuk =", bentuk.area())
