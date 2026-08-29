@@ -1,0 +1,72 @@
+class Student:
+    def _init_(self):
+        self.name = None
+        self.score = None
+
+    # Getter
+    def getName(self):
+        return self.name
+
+    def getScore(self):
+        return self.score
+
+    # Setter
+    def setName(self, name):
+        self.name = name
+
+    def setScore(self, score):
+        self.score = score
+
+
+student = Student()
+
+while True:
+    print("\n===== OOP Program =====")
+    print("1. Tambah Data")
+    print("2. Tampilkan Data")
+    print("3. Ubah Data")
+    print("4. Hapus Data")
+    print("5. Keluar")
+
+    pilihan = input("Masukkan pilihan (1/2/3/4/5): ")
+
+    if pilihan == "1":
+        nama = input("Masukkan Nama: ")
+        nilai = input("Masukkan Nilai: ")
+
+        student.setName(nama)
+        student.setScore(nilai)
+
+        print("Data berhasil ditambahkan")
+
+    elif pilihan == "2":
+        print("Nama :", student.getName())
+        print("Nilai:", student.getScore())
+
+    elif pilihan == "3":
+        ubah = input("Data yang ingin diubah (Nama/Nilai): ")
+
+        if ubah == "Nama":
+            nama = input("Masukkan Nama Baru: ")
+            student.setName(nama)
+            print("Data Nama berhasil diubah")
+
+        elif ubah == "Nilai":
+            nilai = input("Masukkan Nilai Baru: ")
+            student.setScore(nilai)
+            print("Data Nilai berhasil diubah")
+
+        else:
+            print("Data tidak ditemukan")
+
+    elif pilihan == "4":
+        student.setName(None)
+        student.setScore(None)
+        print("Data berhasil dihapus")
+
+    elif pilihan == "5":
+        print("Terima kasih telah menggunakan program.")
+        break
+
+    else:
+        print("Pilihan tidak valid")
